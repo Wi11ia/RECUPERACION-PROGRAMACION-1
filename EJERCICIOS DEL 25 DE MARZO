@@ -1,0 +1,146 @@
+num=float(input('Ingrese el Número:'))
+if num%1==0:
+    print('Sin decimal')
+else:
+    print('Con Decimal')
+
+
+
+
+nombre=input('Ingrese el user:')
+passwd=input('Ingrese la clave:')
+if (nombre=='renato' and passwd=='puce'):
+    print('Ingrese al sistema')
+else:
+    print('No puedes ingresar al sistema')
+
+
+
+
+a=int(input('Ingrese el lado 1:'))
+b=int(input('Ingrese el lado 2:'))
+c=int(input('Ingrese el lado 3:'))
+if a+b>c and a+c>b and b+c>a:
+    print("Es triángulo")
+else:
+    print('No es un triágnulo')
+
+
+
+
+A=int(input('Ingrese A:'))
+B=int(input('Ingrese B:'))
+C=int(input('Ingrese C:'))
+if A>B:
+    if A>C:
+        mayor=A
+    else:
+        mayor=C
+else:
+    if B>C:
+        mayor=B
+    else:
+        mayor=C
+print(f'El mayor es {mayor}')
+
+
+
+
+i=5
+while i>0:
+    print(f'{i}',end=" ")
+    i=i-1
+
+
+
+
+n=int(input('Ingrese n:'))
+i=n
+while i>0:
+    print(f'Iteración {i}')
+    i=i-1
+
+
+
+n=int(input('Ingrese n:'))
+acu=0
+i=1
+while i<=n:
+    acu=acu+i
+    print(f'{i}',end=",")
+    i=i+1
+print(f'La suma es:{acu}')
+
+
+
+
+n=int(input('Ingrese n:'))
+acu=0
+i=1
+while i<=n:
+    acu=acu+i
+    if i==n:
+        print(f'{i}',end="")
+    else:
+        print(f'{i}',end=",")
+    i=i+1
+print(f'\nLa suma es:{acu}')
+
+
+
+
+n=int(input('Ingrese n:'))
+acu=0
+i=1
+while i<=n:
+    acu=acu+1/i
+    if i==n:
+        print(f'{1/i}',end="")
+    else:
+        print(f'{1/i}',end=",")
+    i=i+1
+print(f'\nLa suma es:{acu}')
+
+
+
+import math as mate
+n=int(input('Ingrese n:'))
+facto=mate.factorial(n)
+print(f'\nEl factorial de {n}!={facto}')
+
+
+
+acu=1
+while i<=n:
+    print(f'{i}',end=" ")
+    acu=acu*i
+    i=i+1
+print(f'\nEl factorial de {n}!={acu}')
+
+
+
+
+#Serie Taylor: Exponencial
+import math as mt
+import matplotlib.pyplot as plt
+acu=0
+x=int(input('Ingrese el número x:'))
+n=int(input('Ingrese el número n:'))
+for i in range(0,n):
+    acu=acu+(x**i)/(mt.factorial(i))
+    plt.plot(i, acu,'ro')
+print(f'La exponencial por sumatoria es {acu}')
+expo=mt.exp(x)
+print(f'La exponencial real es {expo}')
+plt.title('GRAFICA DE EXPONENCIAL')
+plt.xlabel('Eje X')
+plt.ylabel('Eje Y')
+plt.grid()
+plt.show()
+
+
+
+
+
+
+
